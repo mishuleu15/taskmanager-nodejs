@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 
-const connectionString =
-  'mongodb+srv://slick123:slick123@slickrobocode.362t2.mongodb.net/taskmanager?retryWrites=true&w=majority';
+const connectionString = '';
 
 mongoose
   .connect(connectionString, {
@@ -10,5 +9,5 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true,
   })
-  .then(() => console.log('Connected to the DB...'))
+  .then(() => console.log('Connected to the Db...'))
   .catch((error) => console.log(error));
